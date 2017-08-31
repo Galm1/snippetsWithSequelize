@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h3>Show Snippets</h3>
+
+    <a href="/index">Home</a>
+    <br>
+    <a href='/showSnippet'>See all Snippets!</a>
+    <br>
+    <a href="/updateSnippet">Edit a Snippet!</a>
+    <br>
+    <a href="/addSnippet">Make a Snippet!</a>
+    <hr>
+
+
+
+    <div class="snippetContainer">
+
+      {{#snippets}}
+      <h5>{{title}}</h5>
+      <p>{{code}}</p>
+      <p>{{notes}}</p>
+
+      <form class="" action="/delete_user/{{id}}" method="post">
+          <p><button type="submit">Delete</button></p>
+        </form>
+        
+      <hr>
+      {{/snippets}}
+    </div>
+
+  </body>
+</html>

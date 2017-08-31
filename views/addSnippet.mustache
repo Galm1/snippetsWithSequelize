@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>snippets</title>
+</head>
+
+<body>
+  <h1>Make a Snippet</h1>
+
+  <a href="/index">Home</a>
+  <br>
+  <a href='/showSnippet'>See all Snippets!</a>
+  <br>
+  <a href="/updateSnippet">Edit a Snippet!</a>
+  <br>
+  <a href="/addSnippet">Make a Snippet!</a>
+
+  <div class="wraper">
+
+
+    <div class='inputDiv'>
+      <form class="snippetForm" action="/makeSnippet" method="post">
+        <input type="text" name="title" value="">
+        <textarea name="code" rows="8" cols="80"></textarea>
+        <input type="text" name="notes" value="">
+        <select id="languages" class="drop_down" name="language">
+          <option value="javascipt" selected>Javascript</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="yacc">Yacc</option>
+        </select>
+        <div class="tags">
+          <input type="radio" name="" value="">
+          <label for="">function</label>
+          <input type="radio" name="" value="">
+          <label for="">boiler plate</label>
+          <input type="radio" name="" value="">
+          <label for="">Schema</label>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="results">
+
+    </div>
+
+
+  </div>
+<script src="app.js"></script>
+</body>
+
+</html>
